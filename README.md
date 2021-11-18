@@ -1,1 +1,3 @@
 # EvonaInovationHack
+
+Run : npm install
