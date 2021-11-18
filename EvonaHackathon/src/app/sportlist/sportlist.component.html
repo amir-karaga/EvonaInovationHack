@@ -1,0 +1,9 @@
+<app-header></app-header>
+<app-banner-slider></app-banner-slider>
+<app-izbornik></app-izbornik>
+<div *ngFor="let sport of selectedSports">
+  <app-sport [sport]="sport">
+
+  </app-sport>
+</div>
+<app-footer></app-footer>

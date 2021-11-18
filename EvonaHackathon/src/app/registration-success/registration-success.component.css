@@ -1,0 +1,50 @@
+/* .img-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 116.5;
+}*/
+h1{
+    margin: 0;
+    padding: 0;
+    color: #0A84FF;
+    font-size: 24px;
+}
+.img-class{
+    justify-content: center;
+    text-align: center;
+}
+.success{
+    margin-top: -10px;
+    text-align: center;
+}
+.tacno{
+    margin-top: 73px;
+    justify-content: center;
+    display: flex;
+
+}
+.registration {
+    margin-top: 22.5px;
+    text-align: center;
+}
+button {
+    height: 44px;
+    width: 312px;
+    background-color: #0A84FF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    margin-top: 65.5px;
+
+}
+.container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color:#1C1C1F ;
+}

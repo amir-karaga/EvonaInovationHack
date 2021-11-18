@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+
+<div class="container">
+    <div class="slike">
+        <img src="../assets/images/Ellipse 50@2x.png" alt="" height="16px" width="16px">
+        <img src="../assets/images/Line 42@2x.png" alt="" height="1px" width="78px">
+        <img src="../assets/images/Ellipse49@2x.png" alt="" height="16px" width="16px">
+    </div>
+    <form [formGroup]="formaRegistracija">
+        <h1>REGISTER</h1>
+        <div class="form-group">
+
+        <input type="text" formControlName ="username" placeholder="Username *" id="username" name="username">
+        <span class="text-muted" *ngIf="formaRegistracija.get('username')?.invalid && formaRegistracija.get('username')?.touched"> Username is required! (min. 4)</span>
+
+        <input name="password" type="password" formControlName ="password" placeholder="Password *" id ="password">
+        <span class="text-muted" *ngIf="formaRegistracija.get('password')?.invalid && formaRegistracija.get('password')?.touched">Password is required! (min. 8)</span>
+
+        <input type="password" formControlName ="confirmpassword" name ="confirmpassword" placeholder="Confirm password *" id ="confirmpassword">
+        <span class="text-muted" *ngIf="formaRegistracija.get('confirmpassword')?.invalid && formaRegistracija.get('confirmpassword')?.touched" name="">Confirm password must be same as password!</span>
+
+        <input type="email" class="form-control" id="email" placeholder="Enter email *" formControlName="email" name="email">
+        <span class="text-muted" *ngIf="formaRegistracija.get('email')?.invalid && formaRegistracija.get('email')?.touched">Email is not valid!</span>
+
+    </div>
+    <button type="submit" [disabled]="!formaRegistracija.valid" routerLink="/registrationSuccess">REGISTER</button>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+
+<div class="match">
+<div class="subconainer">
+   <div class="teams">
+     <div id="team1">
+       <p>{{match.TeamHome}}</p><p style="color: #FFB300;">{{rezultat[0]}}</p>
+      </div>
+      <div id="team2">
+        <p>{{match.TeamAway}}</p><p style="color: #FFB300;">{{rezultat[1]}} </p>
+      </div>
+   </div>
+    <div id="info">
+      <span id="live"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+        <path id="Path_2796" data-name="Path 2796" d="M4,0A4,4,0,1,1,0,4,4,4,0,0,1,4,0Z" fill="#77d200"/>
+      </svg>
+      </span>
+      <span >{{match.LiveMatchTimeState}}</span>
+      <span style="color: #FFB300;">{{match.LiveMatchTime}}'</span>
+    </div>
+</div>
+
+<div class="subconainer" >
+<div class="imaPonuda" *ngIf="match.BasicOffer">
+  <div class="kvota">
+    <small>{{match.BasicOffer.Odds[2]?.ExtendedName}}</small>
+    <small style="color: #0A84FF;">{{match.BasicOffer.Odds[2]?.Odd}}</small>
+  </div>
+  <div class="kvota">
+    <small>{{match.BasicOffer.Odds[0]?.ExtendedName}}</small>
+    <small style="color: #0A84FF;">{{match.BasicOffer.Odds[0]?.Odd}}</small>
+  </div>
+  <div class="kvota">
+    <small>{{match.BasicOffer.Odds[1]?.ExtendedName}}</small>
+    <small style="color: #0A84FF;">{{match.BasicOffer.Odds[1]?.Odd}}</small>
+
+  </div>
+  <div class="kvota2">
+    <small>+</small>
+    <small>{{match.OffersCount}}</small>
+  </div>
+</div>
+<div class="nemaPonuda" *ngIf="!match.BasicOffer">
+<span>Nema ponuda :(</span>
+</div>
+</div>
+</div>

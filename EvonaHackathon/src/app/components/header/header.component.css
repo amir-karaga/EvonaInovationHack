@@ -1,0 +1,72 @@
+
+/* .navBar{
+    width: 100%;
+} */
+.container{
+    width: 100%;
+    height: 56px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color:  #1C1C1F;
+    z-index: 100;
+    max-width:100%;
+}
+#menu-button{
+    height: 32px;
+    width: 40px;
+}
+.lijevi{
+    background-color: rgb(0, 121, 255);
+    width: 50%;
+    margin:-5px 0 0 -5%;
+    padding: 1.2em;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-transform: skewX(-10deg);
+		-moz-transform: skewX(-10deg);
+		-ms-transform: skewX(-10deg);
+		 transform: skewX(-10deg);
+}
+
+.desni{
+   background-color:  #1C1C1F;
+   width: 50%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   float: right;
+}
+
+
+
+button{
+  font-size: 17px;
+}
+#buttonLog{
+    height: 42px;
+    width: 45%;
+    border-radius: 5px;
+    background-color: #1C1C1F;
+    color:#0A84FF;
+    border: 1px solid #0A84FF;
+    margin-left: 4.999%;
+    margin-top:7px;
+}
+#buttonReg{
+    height: 42px;
+     width: 45%;
+     border-radius: 5px;
+    background-color: #1C1C1F;
+    border: 1px solid #0A84FF;
+    color:#0A84FF;
+    margin-left:4.999%;
+    margin-top:7px;
+}

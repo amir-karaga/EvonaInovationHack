@@ -1,0 +1,28 @@
+<div class="container">
+    
+       <!-- <div *ngFor="let banner of banners">
+        
+        <img src="{{banner.FullImageUrl}}" alt="" height="300px" width="300px">
+        
+    </div>    -->
+
+    <ng-container *ngFor="let banner of banners; let i = index">
+        <img
+          [src]="banners.src"
+          class="slide"
+        />
+      </ng-container>
+    
+      <!-- controls -->
+      <button class="control prev">
+        <span class="arrow left"></span>
+      </button>
+      <button class="control next">
+        <span class="arrow right"></span>
+      </button>
+
+    
+</div>
+
+     
+    

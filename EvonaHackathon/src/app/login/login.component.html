@@ -1,0 +1,59 @@
+<app-header>
+
+</app-header>
+<div class="container">
+  <div class="slike">
+    <img src="..\assets\images\Ellipse 49.png" alt="" height="16px" width="16px">
+    <img src="..\assets\images\Line 42.png" alt="" height="1px" width="78px" class="crta">
+    <img src="..\assets\images\Ellipse 50.png" alt="" height="16px" width="16px">
+  </div>
+
+
+
+  <form [formGroup]="formaLogin" class="formaLog">
+    <h1 style="text-align: center; padding-bottom: 14px;">LOG IN</h1>
+
+
+
+    <div class="incorrect" style="display: none;">
+      <p class="incorrectP"> Username or password is incorrect.</p>
+    </div>
+    <div>
+      <input type="text" formControlName="username" placeholder="Username *" id="username" [(ngModel)]="username"
+        ngModel required>
+
+
+
+      <div
+        *ngIf="formaLogin.controls.username.invalid && (formaLogin.controls.username.dirty || formaLogin.controls.username.touched)"
+        class="">
+
+        <div *ngIf="formaLogin.controls.username.errors?.required" class="poruke">
+          Name is required.
+        </div>
+      </div>
+    </div>
+    <div>
+      <input type="password" formControlName="password" placeholder="Password *" id="password" [(ngModel)]="password"
+        required>
+
+
+    </div>
+
+    <div
+      *ngIf="formaLogin.controls.password.invalid && (formaLogin.controls.password.dirty || formaLogin.controls.password.touched)"
+      class="">
+
+      <div *ngIf="formaLogin.controls.password.errors?.required" class="poruke">
+        Password is required.
+      </div>
+    </div>
+    <div id="validiranje" style="display: none;">
+      <span>Username and password are required.</span>
+    </div>
+    <button type="submit" id="dugme" (click)="onLogin()" [disabled]="!formaLogin.valid"
+      [style.background-color]="formaLogin.invalid ? 'rgb(33,61,90)' : ' #0A84FF'"
+      [style.color]="formaLogin.invalid ? 'rgb(82,86,90)' : ' white'" [style.margin]="'10px'" >LOG IN</button>
+  </form>
+
+</div>

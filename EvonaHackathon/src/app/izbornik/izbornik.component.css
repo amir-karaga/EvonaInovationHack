@@ -1,0 +1,94 @@
+.sve{
+    display: flex;
+    position:absolute;
+    width:100%;
+}
+
+img:hover{
+  cursor: pointer;
+}
+.izbornik{
+  width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height:72px;
+    box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #272B31;
+    border-bottom: 3px solid #0A84FF;
+    padding-bottom: 50px !important;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+    height:32px;
+    width: 32px;
+    margin-top:2px;
+ }
+ .icon-all{
+     height:35px;
+     width:35px;
+     text-align: center;
+     margin-top:15px;
+ }
+ #slike p{
+    font-size: 15px;
+    color:white;
+    margin-top:5px;
+ }
+ #slike{
+     display: flex;
+     flex-direction: row;
+     width:90%;
+     height:100%;
+     margin-left: 5%;
+ }
+
+ #SlikaTennis img{
+    margin-top:8.3px;
+    height:20px;
+    width:20px;
+    margin-left:20px;
+}
+#obruc1{
+    justify-content: center;
+    height:38px;
+    width:38px;
+    background-color: none;
+    border:1px solid #0A84FF;
+    border-radius: 50%;
+    text-align:center;
+    margin-top:18px;
+    margin-left: 20px;
+}
+#obruc2{
+    justify-content: center;
+    height:38px;
+    width:38px;
+    background-color: none;
+    border:1px solid white;
+    border-radius: 50%;
+    text-align:center;
+    margin-top:18px;
+    margin-left: 20px;
+}
+#obruc3{
+    justify-content: center;
+    height:38px;
+    width:38px;
+    background-color: none;
+    border:1px solid white;
+    border-radius: 50%;
+    text-align:center;
+    margin-top:18px;
+    margin-left: 20px;
+}
+.white{
+    border:1px solid white;
+}
+.blue{
+    border:1px solid #0A84FF;
+}

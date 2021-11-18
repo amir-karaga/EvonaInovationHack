@@ -1,0 +1,13 @@
+<div class="sporttab">
+  <div class="btn1">
+    <div class="SlikaSoccer" >
+        <img src="../assets/Soccer.png">
+    </div>
+        <p style="text-transform: uppercase;">{{sport.Name}} - IN PLAY</p> <p style="color: #77D200; font-weight: bold;">{{sport.MatchesCount}}</p>
+</div>
+  <div *ngFor="let category of sport.Categories">
+    <div *ngFor="let leage of category.Leagues">
+      <app-league [league]="leage"></app-league>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<!--<p>{{league.Name}}</p >-->
+  <div *ngFor="let match of league.Matches">
+    <app-match [match]="match">
+    </app-match>
+  </div>
